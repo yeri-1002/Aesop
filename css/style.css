@@ -1,3 +1,57 @@
+/* 폰트 */
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+.noto-sans {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+}
+
+.noto-sans {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+}
+
+/* 노말라이즈 */
 body, ul, li, span, p {
   margin: 0;
   padding: 0;
@@ -10,5 +64,46 @@ a {
 }
 
 html, body {
+  font-family: 'Pretendard';
   overflow-x: hidden;
+}
+
+/* .sec-8 시작 */
+.sec-8 {
+  position: relative;
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.sec-8 > .img-box {
+  width: 1920px;
+}
+
+.sec-8 > .img-box > img {
+  display: block;
+  width: 100%
+}
+
+.sec-8 > .text-box {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+
+}
+
+.sec-8 > .text-box > .tit {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #555555;
+  margin-bottom: 12px;
+}
+
+.sec-8 > .text-box > .sub {
+  font-family: 'Suit';
+  font-size: 16px;
+  font-weight: 500;
+  color: #555555;
 }
