@@ -107,3 +107,62 @@ html, body {
   font-weight: 500;
   color: #555555;
 }
+
+/* .sec-9 시작 */
+.sec-9 {
+  position: relative;
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.sec-9 > .img-box {
+  width: 1920px;
+}
+
+.sec-9 > .img-box > img {
+  display: block;
+  width: 100%
+}
+
+.sec-9 > .info {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+}
+
+.sec-9 > .info > .logo {
+  width: 200px;
+  margin-bottom: 60px;
+}
+
+.sec-9 > .info > .logo > img {
+  display: block;
+  width: 100%;
+}
+
+.sec-9 > .info > .text-box > a > .tit {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222222;
+  margin-bottom: 20px;
+}
+
+.sec-9 > .info > .text-box > .sub {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 48px;
+}
+
+.sec-9 > .info > .text-box > .sub > .sub-1,
+.sec-9 > .info > .text-box > .sub > .sub-2 {
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.sec-9 > .info > .text-box > .copy {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  font-family: 400;
+  color: #555555;
+}
