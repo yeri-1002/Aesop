@@ -68,6 +68,97 @@ html, body {
   overflow-x: hidden;
 }
 
+/* .sec-6 시작 */
+.sec-6 {
+  position: relative;
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.sec-6 > .img-box {
+  width: 1920px;
+}
+
+.sec-6 > .img-box > img {
+  display: block;
+  width: 100%
+}
+
+.sec-6 > .info {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.sec-6 > .info > .title {
+  font-size: 38px;
+  font-weight: 500;
+  color: #493E3C;
+  margin-bottom: 12px;
+}
+
+.sec-6 > .info > .sub {
+  font-size: 16px;
+  font-family: 400;
+  color: #888888;
+}
+
+.sec-6 > .con {
+  width: 1760px;
+  margin: 0 auto;
+}
+
+.sec-6 > .con > .img-box {
+  position: absolute;
+  display: flex;
+  gap: 20px;
+  top: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.sec-6 > .con > .img-box > .img {
+  position: relative;
+  white-space: nowrap;
+}
+
+.sec-6 > .con > .img-box > .img > a > img {
+  display: block;
+  width: 573px;
+  transition: filter .3s;
+}
+
+.sec-6 > .con > .img-box > .img:hover > a > img {
+  filter: brightness(36%);
+}
+
+.sec-6 > .con > .img-box > .img > .img-info {
+  position: absolute;
+  top: 460px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 26px;
+  font-weight: 500;
+  color: #F5F4E9;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.sec-6 > .con > .img-box > .img:hover > .img-info {
+  opacity: 1;
+}
+
+.sec-6 > .con > .img-box > .img > .img-info .sub {
+  font-size: 16px;
+  font-weight: 400;
+  color: #F5F4E9;
+  margin-top: 12px;
+}
+
 /* .sec-8 시작 */
 .sec-8 {
   position: relative;
