@@ -74,6 +74,122 @@ html, body {
   overflow-x: hidden;
 }
 
+/* .sec-2 시작 */
+.sec-2 {
+  position: relative;
+  width: 1920px;
+  height: 1063px;
+  background-color: #FFFDF3;
+  margin: 0 auto;
+}
+
+.sec-2 > .text-box {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.sec-2 > .text-box > .tit {
+  font-size: 40px;
+  font-weight: 500;
+  color: #493E3C;
+}
+
+.sec-2 > .text-box > .sub {
+  font-size: 16px;
+  font-weight: 400;
+  color: #888888;
+  margin-top: 12px;
+}
+
+.sec-2 > .con {
+  position: relative;
+  width: 100%;
+  max-width: 1760px;
+  margin: 0 auto;
+}
+
+.sec-2 > .con > .swiper {
+  position: absolute;
+  top: 280px;
+  width: 100%;
+}
+
+.sec-2 > .con .swiper-slide {
+  width: calc((100% - 60px) / 4);
+  box-sizing: border-box;
+}
+
+.sec-2 > .con .swiper-slide > a > img {
+  width: 100%;
+  display: block;
+}
+
+.sec-2 > .con .swiper-slide .info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sec-2 > .con .swiper-slide > .info > .img > img {
+  width: 100%;
+  display: block;
+}
+
+.sec-2 > .con .swiper-slide > .info > .text {
+  position: absolute;
+  top: 30px;
+  left: 21px;
+}
+
+.sec-2 > .con .swiper-slide > .info > .text > .tit {
+  font-size: 18px;
+  font-weight: 500;
+  color: #592E25;
+}
+
+.sec-2 > .con .swiper-slide > .info > .text > .sub {
+  font-size: 14px;
+  font-weight: 400;
+  color: #8C8C8C;
+  margin-top: 4px;
+}
+
+.sec-2 > .con .swiper-slide > .info > .text > .num {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* .swiper-pagination 커스텀 */
+:root {
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+  --swiper-theme-color: #E75A3C;
+}
+
+.sec-2 .swiper-pagination {
+  position: relative;
+  text-align: center;
+  margin-top: 60px;
+  z-index: 10;
+}
+
+.sec-2 .swiper-pagination-bullet {
+  width: 8px;
+  height: 4px;
+  background-color: #E1D7C5;
+}
+
+.sec-2 .swiper-pagination-bullet-active {
+  background-color: var(--swiper-theme-color);
+}
+
 /* .sec-3 시작 */
 .sec-3 {
   position: relative;
@@ -181,8 +297,6 @@ html, body {
   line-height: 1.8;
   color: #888888;
 }
-
-
 
 /* .sec-5 시작 */
 .sec-5 {
