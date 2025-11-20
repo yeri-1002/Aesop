@@ -51,6 +51,12 @@
   font-weight: 500;
 }
 
+.lora {
+  font-family: "Lora", serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
 /* 노말라이즈 */
 body, ul, li, span, p {
   margin: 0;
@@ -67,6 +73,178 @@ html, body {
   font-family: 'Pretendard';
   overflow-x: hidden;
 }
+
+/* .sec-3 시작 */
+.sec-3 {
+  position: relative;
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.sec-3 > .img-box {
+  width: 1920px;
+}
+
+.sec-3 > .img-box > img {
+  display: block;
+  width: 100%
+}
+
+.sec-3 > .con {
+  width: 1760px;
+  margin: 0 auto;
+}
+
+.sec-3 > .con > .top-box {
+  position: absolute;
+  top: 117px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 188px;
+}
+
+.sec-3 > .con > .top-box > .img {
+  width: 880px;
+}
+
+.sec-3 > .con > .top-box > .img > img {
+  display: block;
+  width: 100%;
+}
+
+.sec-3 > .con > .top-box > .info-box > .sub {
+  font-size: 16px;
+  font-weight: 500;
+  color: #E75A3C;
+  margin-bottom: 14px;
+}
+
+.sec-3 > .con > .top-box > .info-box > .tit {
+  font-size: 38px;
+  font-weight: 500;
+  color: #252525;
+  margin-bottom: 48px;
+}
+
+.sec-3 > .con > .top-box > .info-box > .info {
+  line-height: 1.8;
+  color: #888888;
+}
+
+.sec-3 > .con > .logo-img {
+  position: absolute;
+  top: 800px;
+  left: 995px;
+  width: 813px;
+}
+
+.sec-3 > .con > .logo-img > img {
+  display: block;
+  width: 100%;
+}
+
+.sec-3 > .con > .bottom-box {
+  position: absolute;
+  top: 932px;
+  left: 240px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 246px;
+}
+
+.sec-3 > .con > .bottom-box > .img {
+  width: 880px;
+}
+
+.sec-3 > .con > .bottom-box > .img > img {
+  display: block;
+  width: 100%;
+}
+
+.sec-3 > .con > .bottom-box > .info-box > .sub {
+  font-size: 16px;
+  font-weight: 500;
+  color: #E75A3C;
+  margin-bottom: 14px;
+}
+
+.sec-3 > .con > .bottom-box > .info-box > .tit {
+  font-size: 38px;
+  font-weight: 500;
+  color: #252525;
+  margin-bottom: 48px;
+}
+
+.sec-3 > .con > .bottom-box > .info-box > .info {
+  line-height: 1.8;
+  color: #888888;
+}
+
+
+
+/* .sec-5 시작 */
+.sec-5 {
+  position: relative;
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.sec-5 > .img-box {
+  width: 1920px;
+}
+
+.sec-5 > .img-box > img {
+  display: block;
+  width: 100%
+}
+
+.sec-5 > .text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #F9F7F4;
+}
+
+.sec-5 > .text-box > .title {
+  font-family: "Lora", serif;
+  font-size: 44px;
+  font-weight: 500;
+}
+
+.sec-5 > .text-box > .sub {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.sec-5 > .text-box > a {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.sec-5 > .text-box > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 1.8px;
+  background-color: #F9F7F4;
+  transition: width .3s;
+}
+
+.sec-5 > .text-box > a:hover::after {
+  width: 100%;
+}
+
 
 /* .sec-6 시작 */
 .sec-6 {
@@ -144,7 +322,7 @@ html, body {
   font-size: 26px;
   font-weight: 500;
   color: #F5F4E9;
-  opacity: 0;
+  opacity: 0; 
   transition: opacity 0.3s;
 }
 
