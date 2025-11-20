@@ -158,6 +158,11 @@ html, body {
   margin-top: 4px;
 }
 
+:root {
+  --swiper-pagination-progressbar-size: 3px;
+  --swiper-pagination-progressbar-bg-color: #E5E5E5;
+}
+
 .sec-2 > .con .swiper-slide > .info > .text > .num {
   display: flex;
   gap: 8px;
@@ -167,12 +172,6 @@ html, body {
   font-weight: 500;
 }
 
-/* .swiper-pagination 커스텀 */
-:root {
-  --swiper-pagination-bullet-horizontal-gap: 4px;
-  --swiper-theme-color: #E75A3C;
-}
-
 .sec-2 .swiper-pagination {
   position: relative;
   text-align: center;
@@ -180,14 +179,9 @@ html, body {
   z-index: 10;
 }
 
-.sec-2 .swiper-pagination-bullet {
-  width: 8px;
-  height: 4px;
-  background-color: #E1D7C5;
-}
-
-.sec-2 .swiper-pagination-bullet-active {
-  background-color: var(--swiper-theme-color);
+.sec-2 .swiper-pagination .swiper-pagination-progressbar-fill {
+  background-color: #E75A3C;
+  height: 100%;
 }
 
 /* .sec-3 시작 */
