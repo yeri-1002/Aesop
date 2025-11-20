@@ -1,3 +1,26 @@
+// 메인 슬라이드
+const swiperMain = new Swiper('.main-swiper', {
+  loop: true,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  speed: 800,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  on: {
+    init: function () {
+      moveProgressBar(this.realIndex);
+    },
+    slideChangeTransitionStart: function () {
+      moveProgressBar(this.realIndex);
+    }
+  }
+});
+
+// sec-2 스와이퍼 구현
 const swiper = new Swiper('.mySwiper', {
   slidesPerView: 4,
   spaceBetween: 20,
