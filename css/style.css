@@ -158,11 +158,6 @@ html, body {
   margin-top: 4px;
 }
 
-:root {
-  --swiper-pagination-progressbar-size: 3px;
-  --swiper-pagination-progressbar-bg-color: #E5E5E5;
-}
-
 .sec-2 > .con .swiper-slide > .info > .text > .num {
   display: flex;
   gap: 8px;
@@ -170,6 +165,11 @@ html, body {
   color: #222222;
   font-size: 16px;
   font-weight: 500;
+}
+
+:root {
+  --swiper-pagination-progressbar-size: 3px;
+  --swiper-pagination-progressbar-bg-color: #E5E5E5;
 }
 
 .sec-2 .swiper-pagination {
