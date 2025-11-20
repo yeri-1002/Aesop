@@ -637,6 +637,7 @@ body::-webkit-scrollbar-track {
   position: relative;
   width: 1760px;
   margin: 0 auto;
+  padding-top: 20px;
 }
 
 /* swiper */
