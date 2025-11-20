@@ -12,20 +12,20 @@ const swiperMain = new Swiper('.main-swiper', {
   },
   on: {
     init: function () {
-      moveProgressBar(this.realIndex);
+      // moveProgressBar(this.realIndex);
     },
     slideChangeTransitionStart: function () {
-      moveProgressBar(this.realIndex);
+      // moveProgressBar(this.realIndex);
     }
   }
 });
 
 // sec-2 스와이퍼 구현
-const swiper = new Swiper('.mySwiper', {
+const swiper = new Swiper('.best-swiper', {
   slidesPerView: 4,
   spaceBetween: 20,
   pagination: {
-    el: '.swiper-pagination',
+    el: '.sec2-pagination',
     type: "progressbar",
     loop: false,
   },
