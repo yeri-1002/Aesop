@@ -585,3 +585,116 @@ body::-webkit-scrollbar-track {
   font-family: 400;
   color: #555555;
 }
+
+/* .sec-4 시작 */
+.sec-4 {
+  position: relative;
+  width: 1920px;
+  height: 1032px;
+  margin: 0 auto;
+  background-color: #FEFEF2;
+}
+
+.sec-4 > .text-box > .info-text {
+  /* position: absolute; */
+  padding-top: 82px;
+  text-align: center;
+}
+
+.sec-4 > .text-box > .info-text > .tit {
+  font-size: 40px;
+  font-weight: 500;
+  color: #493E3C;
+  margin-bottom: 12px;
+}
+
+.sec-4 > .text-box > .info-text > .tab-menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.sec-4 > .text-box > .info-text > .tab-menu > p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #592E25;
+  border: 1px solid #858178;
+  border-radius: 2px;
+  padding: 6px 15px;
+  cursor: pointer;
+}
+
+.sec-4 > .text-box > .info-text > .tab-menu > p.active {
+  border: none;
+  background-color: #592E25;
+  color: #FFFDF3;
+  font-weight: 600;
+}
+
+.sec-4 > .con {
+  position: relative;
+  width: 1760px;
+  margin: 0 auto;
+}
+
+/* swiper */
+.sec-4 > .con > .swiper {
+  position: relative;
+}
+
+.sec-4 > .con .swiper > .swiper-wrapper {
+  gap: 20px;
+}
+
+.sec-4 > .con .swiper > .swiper-wrapper > .swiper-slide > a {
+  display: block;
+  width: 361px;
+}
+
+.sec-4 > .con .swiper > .swiper-wrapper > .swiper-slide > a > img {
+  width: 100%;
+  display: block;
+}
+
+.sec-4 > .con .swiper > .swiper-wrapper > .swiper-slide > .info {
+  position: relative;
+}
+
+.sec-4 > .con .swiper > .swiper-wrapper > .swiper-slide > .info > .img {
+  width: 361px;
+}
+
+.sec-4 > .con .swiper > .swiper-wrapper > .swiper-slide > .info > .img > img {
+  display: block;
+  width: 100%;
+}
+
+.sec-4 > .con .swiper > .swiper-wrapper > .swiper-slide > .info > .text {
+  position: absolute;
+  top: 30px;
+  left: 21px;
+}
+
+.sec-4 > .con .swiper-slide > .info > .text > .tit {
+  font-size: 18px;
+  font-weight: 500;
+  color: #592E25;
+}
+
+.sec-4 > .con .swiper-slide > .info > .text > .sub {
+  font-size: 14px;
+  font-weight: 400;
+  color: #8C8C8C;
+  margin-top: 4px;
+}
+
+.sec-4 > .con .swiper-slide > .info > .text > .num {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 500;
+}

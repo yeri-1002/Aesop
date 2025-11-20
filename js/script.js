@@ -7,3 +7,38 @@ const swiper = new Swiper('.mySwiper', {
     loop: false,
   },
 });
+
+// sec-4 탭 메뉴 구현
+document.addEventListener("DOMContentLoaded", function () {
+  const swipers = [];
+  document.querySelectorAll(".sec-4 .swiper").forEach((el) => {
+    swipers.push(
+      new Swiper(el, {
+        slidesPerView: 5,
+        spaceBetween: 20,
+        slidesOffsetBefore: 0,
+        slidesOffsetAfter: 120,
+        pagination: {
+          el: el.querySelector(".swiper-pagination"),
+          type: "progressbar",
+        },
+      })
+    );
+  });
+
+  // 탭 전환
+  const tabs = document.querySelectorAll(".sec-4 .tab-menu p[data-index]");
+  const contents = document.querySelectorAll(".sec-4 > .con > div");
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => {
+      tabs.forEach((t) => t.classList.remove("active"));
+      tab.classList.add("active");
+
+      const index = parseInt(tab.dataset.index);
+      contents.forEach((c, i) => (c.style.display = i === index ? "block" : "none"));
+
+      swipers[index].update();
+    });
+  });
+});
