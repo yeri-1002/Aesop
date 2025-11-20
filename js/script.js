@@ -1,4 +1,5 @@
 // 메인 슬라이드
+/*
 const swiperMain = new Swiper('.main-swiper', {
   loop: true,
   autoplay: {
@@ -19,6 +20,7 @@ const swiperMain = new Swiper('.main-swiper', {
     }
   }
 });
+*/
 
 // sec-2 스와이퍼 구현
 const swiperBest = new Swiper('.best-swiper', {
