@@ -95,6 +95,165 @@ body::-webkit-scrollbar-track {
 }
 /* 스크롤바 커스텀 끝 */
 
+/* .menu-bar  시작 */
+.menu-bar {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  padding: 20px 0;
+  background-color: transparent
+}
+
+.menu-bar > .con {
+  width: 1760px;
+  margin: 0 auto;
+}
+
+.menu-bar > .con .logo > a > img {
+  display: block;
+  width: 116px;
+}
+
+.menu-bar > .con .logo > a.hover {
+  display: none;
+}
+
+.menu-bar:hover > .con .logo > a.hover {
+  display: block;
+}
+
+.menu-bar:hover > .con .logo > a {
+  display: none;
+}
+
+.menu-bar .menu {
+  white-space: nowrap;
+  margin-right: 292px;
+}
+
+.menu-bar:hover {
+  background-color: #FFFEF2;
+  cursor: pointer;
+}
+
+.menu-bar.hidden {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.menu-bar .logo {
+  display: flex;
+  align-items: center;
+  gap: 292px;
+}
+
+.menu-bar .menu > ul {
+  display: flex;
+  gap: 111px;
+}
+
+.menu-bar .menu > ul > li {
+  padding-left: 14px;
+}
+
+.menu-bar .menu > ul > li > a {
+  font-size: 20px;
+  font-weight: 400;
+  color: #FFFDF3;
+}
+
+.sub-bg {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  background-color: #FFFDF3;
+  border-top: 1px solid #8C8C8C;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  /* padding: 30px 0; */
+  z-index: 2;
+}
+
+.menu-bar:hover .sub-bg {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.sub-bg .sub-list {
+  display: flex;
+  margin-left: 406px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* gap: 60px; */
+}
+
+.sub-bg .sub-list > li ul li {
+  margin-bottom: 32px;
+  color: #555555;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.sub-bg .sub-list > li ul > li > a:hover {
+  color: #333;
+  font-weight: 500;
+}
+
+.sub-bg .sub-list > li ul.home {
+  width: 162px;
+  height: 500px;
+  padding-top: 28px;
+  padding-left: 30px;
+  background-color: #F0EFE0;
+}
+
+.sub-bg .sub-list > li ul.skin {
+  width: 162px;
+  height: 500px;
+  padding-top: 28px;
+  padding-left: 30px;
+  background-color: #ECE3D3;
+}
+
+.sub-bg .sub-list > li ul.hand {
+  width: 162px;
+  height: 500px;
+  padding-top: 28px;
+  padding-left: 30px;
+  background-color: #F7F1EC;
+}
+
+.sub-bg .sub-list > li ul.perfume {
+  width: 162px;
+  height: 500px;
+  padding-top: 28px;
+  padding-left: 30px;
+  background-color: #F5ECE4;
+}
+
+.sub-bg .sub-list > li ul.gift {
+  width: 162px;
+  height: 500px;
+  padding-top: 28px;
+  padding-left: 30px;
+  background-color: #E9F0E3;
+}
+
+.sub-bg .sub-list > li ul.store {
+  width: 162px;
+  height: 500px;
+  padding-top: 28px;
+  padding-left: 30px;
+  background-color: #EBEADF;
+}
+
+.menu-bar:hover .menu > ul > li > a {
+  color: #333333;;
+}
+
 /* .sec-1 시작 */
 .sec-1 {
   position: relative;
@@ -841,160 +1000,4 @@ body::-webkit-scrollbar-track {
   font-size: 14px;
   font-family: 400;
   color: #555555;
-}
-
-
-/* -- menu -- */
-.menu-bar {
-  width: 100%;
-  position: fixed;
-  z-index: 10;
-  padding: 30px 0;
-  background-color: black;
-}
-
-.menu-bar > .con {
-  width: 1760px;
-  margin: 0 auto;
-}
-
-.menu-bar > .con .logo > a > img {
-  display: block;
-  width: 116px;
-}
-
-.menu-bar > .con .logo > a.hover {
-  display: none;
-}
-
-.menu-bar:hover > .con .logo > a.hover {
-  display: block;
-}
-
-.menu-bar:hover > .con .logo > a {
-  display: none;
-}
-
-.menu-bar .menu {
-  white-space: nowrap;
-  margin-right: 292px;
-}
-
-.menu-bar:hover {
-  background-color: #FFFEF2;
-  cursor: pointer;
-}
-
-.menu-bar.hidden {
-  opacity: 0;
-  transform: translateY(-100%);
-}
-
-.menu-bar .logo {
-  display: flex;
-  align-items: center;
-  gap: 292px;
-}
-
-.menu-bar .menu > ul {
-  display: flex;
-  gap: 111px;
-}
-
-.menu-bar .menu > ul > li {
-  padding-left: 14px;
-}
-
-.menu-bar .menu > ul > li > a {
-  font-size: 20px;
-  font-weight: 500;
-  color: #FFFDF3;
-}
-
-.sub-bg {
-  position: absolute;
-  left: 0;
-  top: 100%;
-  width: 1920px;
-  background-color: #FFFDF3;
-  border-top: 1px solid #8C8C8C;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(10px);
-  /* padding: 30px 0; */
-  z-index: 2;
-}
-
-.menu-bar:hover .sub-bg {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-.sub-bg .sub-list {
-  display: flex;
-  margin-left: 406px;
-  justify-content: flex-start;
-  align-items: flex-start;
-  /* gap: 60px; */
-  background-color: #fff;
-}
-
-.sub-bg .sub-list > li ul li {
-  margin-bottom: 32px;
-  color: #555555;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.sub-bg .sub-list > li ul.home {
-  width: 162px;
-  height: 500px;
-  padding-top: 28px;
-  padding-left: 30px;
-  background-color: #F0EFE0;
-}
-
-.sub-bg .sub-list > li ul.skin {
-  width: 162px;
-  height: 500px;
-  padding-top: 28px;
-  padding-left: 30px;
-  background-color: #ECE3D3;
-}
-
-.sub-bg .sub-list > li ul.hand {
-  width: 162px;
-  height: 500px;
-  padding-top: 28px;
-  padding-left: 30px;
-  background-color: #F7F1EC;
-}
-
-.sub-bg .sub-list > li ul.perfume {
-  width: 162px;
-  height: 500px;
-  padding-top: 28px;
-  padding-left: 30px;
-  background-color: #F5ECE4;
-}
-
-.sub-bg .sub-list > li ul.gift {
-  width: 162px;
-  height: 500px;
-  padding-top: 28px;
-  padding-left: 30px;
-  background-color: #E9F0E3;
-}
-
-.sub-bg .sub-list > li ul.store {
-  width: 162px;
-  height: 500px;
-  padding-top: 28px;
-  padding-left: 30px;
-  background-color: #EBEADF;
-}
-
-.menu-bar:hover .menu > ul > li > a {
-  color: #333333;;
 }
