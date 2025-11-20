@@ -567,7 +567,6 @@ body::-webkit-scrollbar-track {
   width: 100%;
 }
 
-
 /* .sec-6 시작 */
 .sec-6 {
   position: relative;
@@ -657,6 +656,92 @@ body::-webkit-scrollbar-track {
   font-weight: 400;
   color: #F5F4E9;
   margin-top: 12px;
+}
+
+/* .sec-7 시작 */
+.sec-7 {
+  position: relative;
+  width: 1920px;
+  height: 1235px;
+  margin: 0 auto;
+  background-color: #FFFDF3;
+}
+
+.sec-7 > .text-box {
+  text-align: center;
+  padding-top: 112px;
+  padding-bottom: 82px;
+}
+
+.sec-7 > .text-box > .tit {
+  font-size: 40px;
+  font-weight: 500;
+  color: #493E3C;
+  margin-bottom: 12px;
+}
+
+.sec-7 > .text-box > .sub {
+  font-size: 16px;
+  font-weight: 400;
+  color: #888888;
+}
+
+.sec-7 > .swiper {
+  width: 1760px;
+  margin: 0 auto;
+}
+
+.sec-7 > .swiper .swiper-slide {
+  width: auto;
+  transform: scale(0.7);
+  opacity: .3;
+}
+
+.sec-7 > .swiper .swiper-slide-active {
+  transform: scale(1);
+  opacity: 1;
+  z-index: 2;
+}
+
+.sec-7 .swiper-slide-prev,
+.sec-7 .swiper-slide-next {
+  transform: scale(0.6);
+  opacity: 0.7;
+}
+
+.sec-7 > .swiper .swiper-slide img {
+  display: block;
+  width: 1166px;
+}
+
+.sec-7 > .swiper .swiper-slide > .info {
+  margin-top: 40px;
+  margin-left: 6px;
+  opacity: 0;
+}
+
+.sec-7 > .swiper .swiper-slide-active .info {
+  opacity: 1;
+}
+
+.sec-7 > .swiper .swiper-slide > .info > .title {
+  font-size: 32px;
+  font-weight: 500;
+  color: #592E25;
+}
+
+.sec-7 > .swiper .swiper-slide > .info > .store {
+  margin-top: 18px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #555555
+}
+
+.sec-7 > .swiper .swiper-slide > .info > .sub {
+  margin-top: 32px;
+  font-weight: 400;
+  color: #4f4d48;
+  line-height: 1.6;
 }
 
 /* .sec-8 시작 */

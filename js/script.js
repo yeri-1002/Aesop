@@ -21,7 +21,7 @@ const swiperMain = new Swiper('.main-swiper', {
 });
 
 // sec-2 스와이퍼 구현
-const swiper = new Swiper('.best-swiper', {
+const swiperBest = new Swiper('.best-swiper', {
   slidesPerView: 4,
   spaceBetween: 20,
   pagination: {
@@ -64,4 +64,15 @@ document.addEventListener("DOMContentLoaded", function () {
       swipers[index].update();
     });
   });
+});
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  loop: true,
+  spaceBetween: -300,
+  pagination: {
+    // el: ".swiper-pagination",
+    clickable: true,
+  },
 });
