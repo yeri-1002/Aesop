@@ -101,7 +101,7 @@ body::-webkit-scrollbar-track {
   position: fixed;
   z-index: 10;
   padding: 20px 0;
-  background-color: transparent
+  background-color: transparent;
 }
 
 .menu-bar > .con {
