@@ -74,6 +74,14 @@ html, body {
   overflow-x: hidden;
 }
 
+.pc {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
 /* 스크롤바 커스텀 시작 */
 body::-webkit-scrollbar {
   width: 5px;
@@ -1000,4 +1008,70 @@ body::-webkit-scrollbar-track {
   font-size: 14px;
   font-family: 400;
   color: #555555;
+}
+
+/* 반응형 모바일 버전 */
+@media (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  html, body {
+    overflow-x: visible;
+  }
+
+  .sec-9 {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .sec-9 > .img-box {
+    width: 100%;
+  }
+
+  .sec-9 > .info {
+    position: absolute;
+    top: 90px;
+    left: 30px;
+  }
+
+  .sec-9 > .info > .logo {
+    width: 82px;
+    margin-bottom: 16px;
+  }
+
+  .sec-9 > .info > .logo > img {
+    width: 100%;
+  }
+
+  .sec-9 > .info > .text-box > a > .tit {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  .sec-9 > .info > .text-box > .sub {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .sec-9 > .info > .text-box > .sub > .s-info {
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+
+  .sec-9 > .info > .text-box > .sub > .num {
+    line-height: 1.6;
+  }
+
+  .sec-9 > .info > .text-box > .sub > .copy {
+    font-size: 12px;
+  }
 }
