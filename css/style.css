@@ -1024,6 +1024,46 @@ body::-webkit-scrollbar-track {
     overflow-x: visible;
   }
 
+  .menu-bar {
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 10;
+    padding: 13px 0;
+    background-color: #FFFEF2;
+  }
+
+  .menu-bar .logo {
+    display: block;
+    width: 63px;
+  }
+
+  .menu-bar > .con .logo > a > img {
+    display: block;
+    width: 100%;
+  }
+  
+  .menu-bar .top {
+    display: flex;
+    align-items: center;
+    gap: 160px;
+    margin-left: 30px;
+  }
+
+  .menu-bar .hamburger {
+    width: 20px;
+  }
+
+  .menu-bar .hamburger > a > span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #1D1D1F;
+    margin: 5px 0;
+    border-radius: 2px;
+  }
+
+  /* .sec-9 모바일 시작 */
   .sec-9 {
     position: relative;
     width: 100%;
