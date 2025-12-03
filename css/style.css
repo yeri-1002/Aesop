@@ -1170,6 +1170,21 @@ body::-webkit-scrollbar-track {
     font-size: 14px;
   }
 
+  /* .sec-5 모바일 시작 */
+  .sec-5 {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .sec-5 > .img-box {
+    width: 100%;
+  }
+
+  .sec-5 > .text-box > .title {
+    font-size: 20px;
+  }
+
   /* .sec-8 모바일 시작 */
   .sec-8 {
     position: relative;
