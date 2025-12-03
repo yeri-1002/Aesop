@@ -1170,6 +1170,39 @@ body::-webkit-scrollbar-track {
     font-size: 14px;
   }
 
+  /* .sec-8 모바일 시작 */
+  .sec-8 {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .sec-8 > .img-box {
+    width: 100%;
+  }
+
+  .sec-8 > .text-box {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .sec-8 > .text-box > .tit {
+    font-size: 16px;
+    white-space: nowrap;
+    color: #333333;
+    margin-bottom: 4px;
+    font-weight: 500;
+  }
+
+  .sec-8 > .text-box > .sub {
+    font-size: 12px;
+    color: #555555;
+    font-weight: 500;
+  }
+
   /* .sec-9 모바일 시작 */
   .sec-9 {
     position: relative;
@@ -1183,7 +1216,7 @@ body::-webkit-scrollbar-track {
 
   .sec-9 > .info {
     position: absolute;
-    top: 90px;
+    top: 70px;
     left: 30px;
   }
 
@@ -1197,7 +1230,7 @@ body::-webkit-scrollbar-track {
   }
 
   .sec-9 > .info > .text-box > a > .tit {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     margin-bottom: 24px;
   }
@@ -1205,7 +1238,7 @@ body::-webkit-scrollbar-track {
   .sec-9 > .info > .text-box > .sub {
     display: flex;
     flex-direction: column;
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 20px;
   }
 
