@@ -17,7 +17,6 @@ let lastScrollTop = 0;
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // 음수 방지
   });
 
-
 // 메인 슬라이드
 const swiperMain = new Swiper('.main-swiper', {
   loop: true,
@@ -39,6 +38,7 @@ const swiperMain = new Swiper('.main-swiper', {
     }
   }
 });
+
 
 // sec-2 스와이퍼 구현
 const swiperBest = new Swiper('.best-swiper', {

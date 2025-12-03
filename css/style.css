@@ -1054,6 +1054,51 @@ body::-webkit-scrollbar-track {
     border-radius: 2px;
   }
 
+  /* .sec1 모바일 시작 */
+  .sec-1 {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 52px;
+  }
+  
+  .sec-1 .swiper-slide > a > img {
+    display: block;
+    width: 495px;
+  }
+
+  .sec-1 .swiper-slide > .info {
+    position: absolute;
+    top: 185px;
+    left: 32px;
+  }
+
+  .sec-1 .swiper-slide > .info > .text {
+    color: #FFFDF3;
+  }
+
+  .sec-1 .swiper-slide > .info > .text > .tit {
+    font-family: "Lora", serif;
+    font-size: 26px;
+    font-family: 400;
+    margin-bottom: 12px;
+  }
+
+  .sec-1 .swiper-slide > .info > .text > .sub {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.4;
+  }
+
+  :root {
+  --swiper-pagination-bottom: 26px;
+  --swiper-pagination-bullet-horizontal-gap: 10px;
+  --swiper-pagination-color: #E75A3C;
+  --swiper-pagination-bullet-inactive-color: #FFFDF3;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-size: 6px;
+}
+
   /* .sec-3 모바일 시작 */
   .sec-3 {
     position: relative;
