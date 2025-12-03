@@ -1076,15 +1076,98 @@ body::-webkit-scrollbar-track {
   }
 
   .sec-3 > .con > .top-box {
-    border: 2px solid orange;
     position: absolute;
-    top: 30px;
+    top: 12px;
     left: 30px;
     display: block;
   }
 
   .sec-3 > .con > .top-box > .img {
     width: 435px;
+  }
+
+  .sec-3 > .con > .top-box > .info-box {
+    margin-top: 18px;
+  }
+
+  .sec-3 > .con > .top-box > .info-box > .tit {
+    margin-bottom: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #252525;
+  }
+
+  .sec-3 > .con > .top-box > .info-box > .info {
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .sec-3 > .con > .top-box > .button-box {
+    border: 1px solid #D6D5CC;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color .3s;
+  }
+
+  .sec-3 > .con > .top-box > .button-box:hover {
+    background-color: #F6F4E8;
+  }
+  
+  .sec-3 > .con > .top-box > .button-box > .button-info {
+    padding: 14px 16px;
+    display: flex;
+    justify-content: space-between;
+    color: #2F2F2F;
+    font-size: 14px;
+  }
+
+  .sec-3 > .con > .bottom-box {
+    position: absolute;
+    top: 620px;
+    left: 30px;
+    display: block;
+    z-index: 1;
+  }
+
+  .sec-3 > .con > .bottom-box > .img {
+    width: 435px;
+  }
+
+  .sec-3 > .con > .bottom-box > .info-box {
+    margin-top: 18px;
+  }
+
+  .sec-3 > .con > .bottom-box > .info-box > .tit {
+    margin-bottom: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #252525;
+  }
+
+  .sec-3 > .con > .bottom-box > .info-box > .info {
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .sec-3 > .con > .bottom-box > .button-box {
+    border: 1px solid #D6D5CC;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color .3s;
+  }
+
+  .sec-3 > .con > .bottom-box > .button-box:hover {
+    background-color: #F6F4E8;
+  }
+  
+  .sec-3 > .con > .bottom-box > .button-box > .button-info {
+    padding: 14px 16px;
+    display: flex;
+    justify-content: space-between;
+    color: #2F2F2F;
+    font-size: 14px;
   }
 
   /* .sec-9 모바일 시작 */
