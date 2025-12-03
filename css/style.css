@@ -440,16 +440,9 @@ body::-webkit-scrollbar-track {
 .sec-3 {
   position: relative;
   width: 1920px;
+  height: 1864px;
   margin: 0 auto;
-}
-
-.sec-3 > .img-box {
-  width: 1920px;
-}
-
-.sec-3 > .img-box > img {
-  display: block;
-  width: 100%
+  background-color: #F6F5E8;
 }
 
 .sec-3 > .con {
@@ -738,7 +731,9 @@ body::-webkit-scrollbar-track {
 .sec-6 {
   position: relative;
   width: 1920px;
+  height: 956px;
   margin: 0 auto;
+  background-color: #FFFDF3;
 }
 
 .sec-6 > .img-box {
@@ -915,16 +910,10 @@ body::-webkit-scrollbar-track {
 .sec-8 {
   position: relative;
   width: 1920px;
+  height: 320px;
   margin: 0 auto;
-}
-
-.sec-8 > .img-box {
-  width: 1920px;
-}
-
-.sec-8 > .img-box > img {
-  display: block;
-  width: 100%
+  background-color: #F7F1EC;
+  border-top: 1px solid #EDE1D5;
 }
 
 .sec-8 > .text-box {
@@ -933,7 +922,6 @@ body::-webkit-scrollbar-track {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-
 }
 
 .sec-8 > .text-box > .tit {
@@ -955,7 +943,9 @@ body::-webkit-scrollbar-track {
 .sec-9 {
   position: relative;
   width: 1920px;
+  height: 422px;
   margin: 0 auto;
+  background-color: #FFFDF3;
 }
 
 .sec-9 > .img-box {
