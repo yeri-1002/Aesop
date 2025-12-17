@@ -74,6 +74,23 @@ document.addEventListener("DOMContentLoaded", function () {
         spaceBetween: 20,
         slidesOffsetBefore: 0,
         slidesOffsetAfter: 120,
+        observer: true,
+        observeParents: true,
+
+        breakpoints: {
+          // 모바일
+          0: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+            slidesOffsetAfter: 50,
+          },
+
+          // PC
+          768: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+          },
+        },
         pagination: {
           el: el.querySelector(".swiper-pagination"),
           type: "progressbar",
@@ -94,7 +111,9 @@ document.addEventListener("DOMContentLoaded", function () {
       const index = parseInt(tab.dataset.index);
       contents.forEach((c, i) => (c.style.display = i === index ? "block" : "none"));
 
-      swipers[index].update();
+      requestAnimationFrame(() => {
+        swipers[index].update();
+      });
     });
   });
 });
@@ -105,7 +124,6 @@ var swiper = new Swiper(".mySwiper", {
   loop: true,
   spaceBetween: -300,
   pagination: {
-    // el: ".swiper-pagination",
     clickable: true,
   },
 });
