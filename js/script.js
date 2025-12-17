@@ -39,7 +39,6 @@ const swiperMain = new Swiper('.main-swiper', {
   }
 });
 
-
 // sec-2 스와이퍼 구현
 const swiperBest = new Swiper('.best-swiper', {
   slidesPerView: 4,
@@ -49,6 +48,20 @@ const swiperBest = new Swiper('.best-swiper', {
     type: "progressbar",
     loop: false,
   },
+  
+  breakpoints: {
+    // 모바일
+    0: {
+      slidesPerView: 2,
+      spaceBetween: 12,
+    },
+
+    // PC
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  }
 });
 
 // sec-4 탭 메뉴 구현
