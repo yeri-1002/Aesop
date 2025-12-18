@@ -91,10 +91,10 @@ document.addEventListener("DOMContentLoaded", function () {
             spaceBetween: 20,
           },
         },
-        pagination: {
-          el: el.querySelector(".swiper-pagination"),
-          type: "progressbar",
-        },
+        // pagination: {
+        //   el: el.querySelector(".swiper-pagination"),
+        //   type: "progressbar",
+        // },
       })
     );
   });

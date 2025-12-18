@@ -591,6 +591,14 @@ body::-webkit-scrollbar-track {
   padding-top: 20px;
 }
 
+.sec-4 > .con > div {
+  display: none;
+}
+
+.sec-4 > .con > div.active {
+  display: block;
+}
+
 .sec-4 > .con > .swiper {
   position: relative;
 }
